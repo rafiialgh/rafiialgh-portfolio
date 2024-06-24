@@ -1,113 +1,96 @@
-import Image from 'next/image'
+import Image from 'next/image';
+import ProjectSection from '../app/projectSection/page';
 
-export default function Home() {
+export default function Dashboard() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <div className='relative overflow-hidden hero-wrapper pt-16 border-b-gray-200 border-b border-solid flex justify-center shadow-sm'>
+        <div className='bg-ournaments absolute inset-0'></div>
+        <div className='h-[30rem] md:h-[26rem] mt-12 md:mt-0 bg-opacity-20 flex flex-col md:flex-row mx-10 max-w-6xl self-center'>
+          <div className='flex flex-col justify-center md:w-1/2 w-full'>
+            <p className='text-gray-900 text-[2.5rem] font-bold font-commissioner mb-2 z-20'>
+              a happy computer science student
+            </p>
+            <p className='text-gray-900 text-[2.5rem] font-normal font-commissioner leading-none z-20'>
+              who is passionate about building technology that empowers people
+            </p>
+          </div>
+          <div className='relative md:w-1/2 font-commissioner -translate-x-14 z-10 hidden md:block'>
+            <div className='z-10 absolute px-4 py-1 bg-black rounded-full bottom-24 left-5 shadow-md text-sm'>
+              Next.Js
+            </div>
+            <div className='z-10 absolute px-4 py-1 bg-teal-800 rounded-full bottom-20 right-2 shadow-md text-sm'>
+              Rest API
+            </div>
+            <div className='z-10 absolute px-4 py-1 bg-[#FF2C1F] rounded-full top-14 left-44 shadow-md text-sm'>
+              Laravel
+            </div>
+            <div className='z-10 absolute px-4 py-1 bg-[#00C8FF] rounded-full bottom-48 -right-6 shadow-md text-sm'>
+              React.Js
+            </div>
+            <div className='z-10 absolute px-4 py-1 bg-[#DA2877] rounded-full top-36 right-32 shadow-md text-sm'>
+              SQL
+            </div>
+            <div className='z-10 absolute px-4 py-1 bg-[#0367D7] rounded-full top-48 left-20 shadow-md text-sm'>
+              React Native
+            </div>
+            <div className='absolute w-48 md:w-60 mx-auto left-0 right-10 -bottom-80 md:-bottom-3 translate-x-4 hidden md:block'>
+              <video
+                src='/Emoji.MOV'
+                className='w-full'
+                autoPlay
+                muted
+                loop
+              ></video>
+            </div>
+            <div className='absolute w-[60rem] md:w-[80rem] pb-96 top-[20px] md:bottom-[-10px] absolute-x-center hidden md:block'>
+              <div className='absolute absolute-y-center absolute-x-center'>
+                <img
+                  src='/circle.svg'
+                  className='animate-spin-slow rounded-full'
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <ProjectSection />
+      <div className='keep-in-touch-section py-12 px-6 bg-gray-100 flex justify-center items-center'>
+        <div className='max-w-4xl mx-auto text-center items-center justify-center flex-col'>
+          <h2 className='text-3xl font-bold font-commissioner mb-4 text-gray-900'>
+            Keep in Touch
+          </h2>
+          <p className='text-gray-700 text-lg mb-8'>
+            I'd love to hear from you! Whether you have a question about
+            projects, collaborations, or just want to say hi, feel free to get
+            in touch.
+          </p>
+          <div className='flex flex-col md:flex-row justify-center md:space-x-4 space-y-4 md:space-y-0 w-full mx-auto items-center'>
+            <a
+              href='mailto:rafii.alghafari@gmail.com'
+              className='px-6 py-2 bg-blue-600 text-white rounded-full font-semibold hover:bg-blue-700 transition'
+            >
+              Email Me
+            </a>
+            <a
+              href='https://www.linkedin.com/in/rafiialgh/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='px-6 py-2 bg-blue-600 text-white rounded-full font-semibold hover:bg-blue-700 transition'
+            >
+              LinkedIn
+            </a>
+            <a
+              href='https://github.com/rafiialgh'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='px-6 py-2 bg-gray-800 text-white rounded-full font-semibold hover:bg-gray-900 transition'
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    </>
+  );
 }

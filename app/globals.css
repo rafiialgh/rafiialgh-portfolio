@@ -16,12 +16,49 @@
   }
 }
 
+*,
+:after,
+:before {
+  --tw-transform: translateX(var(--tw-translate-x))
+    translateY(var(--tw-translate-y)) rotate(var(--tw-rotate))
+    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+    scaleY(var(--tw-scale-y));
+}
+
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
+  background: linear-gradient(to bottom, transparent, rgb(var(#ffff)))
     rgb(var(--background-start-rgb));
+}
+
+.hero-wrapper {
+  background: radial-gradient(
+      40% 70.48% at 105.08% 60.69%,
+      rgba(255, 72, 72, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    radial-gradient(
+      20.3% 50.48% at 6.28% 40.52%,
+      rgba(107, 255, 211, 0.4) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    
+}
+
+.absolute-x-center {
+  left: 50%;
+  --tw-translate-x: -50%;
+  transform: var(--tw-transform);
+}
+
+.bg-grid {
+  background-size: 100px 100px;
+  background-image: url('/bg-grid.png');
+  opacity: 5%
+}
+
+.bg-ournaments {
+  /* background-size: 100px 100px; */
+  background-image: url('/ournaments.png');
+  opacity: 30%
 }
