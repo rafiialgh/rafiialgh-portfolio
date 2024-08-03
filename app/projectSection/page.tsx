@@ -4,14 +4,14 @@ import ProjectBox from '../components/projectBox/page';
 export default function ProjectSection() {
   return (
     <>
-      <section className='relative py-16 border-b border-solid border-gray-200 shadow-sm'>
+      <section className='relative py-10 border-b border-solid border-gray-200 shadow-sm'>
         <div className='inset-0 -z-[2] absolute bg-gradient-to-b from-white from-2% via-transparent to-white to-1%'></div>
         <div className='bg-grid absolute inset-0 -z-[3]'></div>
         <div className='flex justify-center'>
-          <div className='max-w-6xl mx-10 w-full'>
+          <div className='max-w-6xl mx-5 w-full'>
             <div className='mb-10'>
               <h1
-                className='font-commissioner font-semibold text-2xl text-gray-900'
+                className='font-commissioner font-bold text-2xl text-gray-900'
                 id='contact-me'
               >
                 🚀 Highlighted projects

@@ -6,56 +6,75 @@ export default function Dashboard() {
     <>
       <div className='relative overflow-hidden hero-wrapper pt-16 border-b-gray-200 border-b border-solid flex justify-center shadow-sm'>
         <div className='bg-ournaments absolute inset-0'></div>
-        <div className='h-[30rem] md:h-[26rem] mt-12 md:mt-0 bg-opacity-20 flex flex-col md:flex-row mx-10 max-w-6xl self-center'>
-          <div className='flex flex-col justify-center md:w-1/2 w-full'>
-            <p className='text-gray-900 text-[2.5rem] font-bold font-commissioner mb-2 z-20'>
+        <div className='h-[26rem] md:h-[23rem] mt-3 md:mt-10 bg-opacity-20 flex flex-col md:flex-row mx-5 md:mx-10 w-full gap-5 md:gap-0 max-w-6xl'>
+          <div className='flex flex-col justify-center md:w-1/2 lg:w-full'>
+            <p className='text-gray-900 text-4xl md:text-[2.5rem] font-bold font-commissioner mb-2 z-20'>
               a happy computer science student
             </p>
-            <p className='text-gray-900 text-[2.5rem] font-normal font-commissioner leading-none z-20'>
+            <p className='text-gray-900 text-3xl md:text-[2rem] font-normal font-commissioner leading-none z-20'>
               who is passionate about building technology that empowers people
             </p>
           </div>
-          <div className='relative md:w-1/2 font-commissioner -translate-x-14 z-10 hidden md:block'>
-            <div className='z-10 absolute px-4 py-1 bg-black rounded-full bottom-24 left-5 shadow-md text-sm'>
-              Next.Js
+
+          <div className='relative w-full h-full flex justify-center '>
+            <div className='relative w-full h-full max-w-md md:max-w-xl'>
+              {/* Next.js */}
+              <div className='absolute bottom-8 left-5 z-10 px-3 md:px-4 py-1 bg-black rounded-full shadow-md text-xs md:text-sm md:bottom-24 md:left-9'>
+                Next.Js
+              </div>
+
+              {/* Rest API */}
+              <div className='absolute bottom-10 right-5 z-10 px-3 md:px-4 py-1 bg-teal-800 rounded-full shadow-md text-xs md:text-sm md:bottom-16'>
+                Rest API
+              </div>
+
+              {/* Laravel */}
+              <div className='absolute top-8 right-20 z-10 px-3 md:px-4 py-1 bg-[#FF2C1F] rounded-full shadow-md text-xs md:text-sm md:top-20 md:right-12'>
+                Laravel
+              </div>
+
+              {/* React.js */}
+              <div className='absolute top-24 left-9 z-10 px-3 md:px-4 py-1 bg-[#00C8FF] rounded-full shadow-md text-xs md:text-sm md:top-40 md:left-20'>
+                React.Js
+              </div>
+
+              {/* SQL */}
+              <div className='absolute top-10 left-28 z-10 px-3 md:px-4 py-1 bg-[#DA2877] rounded-full shadow-md text-xs md:text-sm md:top-16'>
+                SQL
+              </div>
+
+              {/* React Native */}
+              <div className='absolute bottom-24 right-7 z-10 px-3 md:px-4 py-1 bg-[#0367D7] rounded-full shadow-md text-xs md:text-sm md:bottom-56 md:right-36'>
+                React Native
+              </div>
             </div>
-            <div className='z-10 absolute px-4 py-1 bg-teal-800 rounded-full bottom-20 right-2 shadow-md text-sm'>
-              Rest API
-            </div>
-            <div className='z-10 absolute px-4 py-1 bg-[#FF2C1F] rounded-full top-14 left-44 shadow-md text-sm'>
-              Laravel
-            </div>
-            <div className='z-10 absolute px-4 py-1 bg-[#00C8FF] rounded-full bottom-48 -right-6 shadow-md text-sm'>
-              React.Js
-            </div>
-            <div className='z-10 absolute px-4 py-1 bg-[#DA2877] rounded-full top-36 right-32 shadow-md text-sm'>
-              SQL
-            </div>
-            <div className='z-10 absolute px-4 py-1 bg-[#0367D7] rounded-full top-48 left-20 shadow-md text-sm'>
-              React Native
-            </div>
-            <div className='absolute w-48 md:w-60 mx-auto left-0 right-10 -bottom-80 md:-bottom-3 translate-x-4 hidden md:block'>
+
+            <div className='absolute -bottom-5 md:-bottom-4 flex justify-center items-center w-full max-w-md'>
               <video
                 src='/Emoji.MOV'
-                className='w-full'
+                className='w-40 md:w-60'
                 autoPlay
                 muted
+                playsInline
                 loop
               ></video>
             </div>
-            <div className='absolute w-[60rem] md:w-[80rem] pb-96 top-[20px] md:bottom-[-10px] absolute-x-center hidden md:block'>
-              <div className='absolute absolute-y-center absolute-x-center'>
+            <div className='absolute top-[20px] w-full max-w-md md:w-[80rem] md:bottom-[-10px] absolute-x-center'>
+              <div className='absolute absolute-y-center absolute-x-center w-full md:w-auto -bottom-34 md:bottom-auto'>
                 <img
                   src='/circle.svg'
-                  className='animate-spin-slow rounded-full'
+                  className='animate-spin-slow rounded-full md:max-w-2xl'
                 />
               </div>
             </div>
+
+            
           </div>
+          
         </div>
       </div>
       <ProjectSection />
-      <div className='keep-in-touch-section py-12 px-6 bg-gray-100 flex justify-center items-center'>
+      <div className='keep-in-touch-section py-10 px-6 bg-gray-100 flex justify-center items-center'>
         <div className='max-w-4xl mx-auto text-center items-center justify-center flex-col'>
           <h2 className='text-3xl font-bold font-commissioner mb-4 text-gray-900'>
             Keep in Touch

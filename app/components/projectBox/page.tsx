@@ -14,7 +14,7 @@ export default function ProjectBox(props: ProjectBoxProps) {
   const { image, title, desc, platform, stack, prod, prodLink } = props;
   return (
     <>
-      <div className='relative border border-solid border-gray-200 min-w-[22rem] max-w-full overflow-hidden rounded-xl group cursor-pointer shadow-sm'>
+      <div className='relative border border-solid border-gray-200 max-w-full overflow-hidden rounded-xl group cursor-pointer shadow-sm'>
         <Image
           src={image}
           width={2876}
