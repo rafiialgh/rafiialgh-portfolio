@@ -25,7 +25,7 @@ export default function Dashboard() {
 
               {/* Rest API */}
               <div className='absolute bottom-10 right-5 z-10 px-3 md:px-4 py-1 bg-teal-800 rounded-full shadow-md text-xs md:text-sm md:bottom-16'>
-                Rest API
+                Docker
               </div>
 
               {/* Laravel */}
