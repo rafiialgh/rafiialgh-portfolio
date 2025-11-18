@@ -30,7 +30,7 @@ export default function Dashboard() {
 
               {/* Laravel */}
               <div className='absolute top-8 right-20 z-10 px-3 md:px-4 py-1 bg-[#FF2C1F] rounded-full shadow-md text-xs md:text-sm md:top-20 md:right-12'>
-                Laravel
+                Rest API
               </div>
 
               {/* React.js */}
