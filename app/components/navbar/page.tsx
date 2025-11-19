@@ -22,7 +22,7 @@ export default function Navbar() {
     <nav className='fixed top-0 z-50 w-full backdrop-blur'>
       <div className='max-w-6xl flex justify-between md:items-center py-5 mx-5 md:mx-10 xl:mx-auto'>
         <div className='md:flex justify-between md:w-full'>
-          <h1 className='text-gray-900 font-bold font-commissioner text-xl md:text-4xl'>
+          <h1 className='text-gray-900 font-bold font-plusJakartaSans text-xl md:text-2xl'>
             rafiialgh.
           </h1>
           {/* <ul

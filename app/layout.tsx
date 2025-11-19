@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 
-import { Commissioner, Roboto_Mono, Rubik_Mono_One } from 'next/font/google';
+import { Commissioner, Roboto_Mono, Rubik_Mono_One, Plus_Jakarta_Sans } from 'next/font/google';
 import Navbar from './components/navbar/page';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -11,6 +11,11 @@ const commissioner = Commissioner({
   subsets: ['latin'],
   variable: '--font-commissioner',
 });
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  variable: '--font-plusJakartaSans'
+})
 
 const rubikMonoOne = Rubik_Mono_One({
   weight: '400',
@@ -36,7 +41,7 @@ export default function RootLayout({
   return (
     <html
       lang='en'
-      className={`${commissioner.variable} ${rubikMonoOne.variable} ${robotoMono.variable}`}
+      className={`${commissioner.variable} ${rubikMonoOne.variable} ${robotoMono.variable} ${plusJakartaSans.variable}`}
     >
       <body>
         <Navbar />

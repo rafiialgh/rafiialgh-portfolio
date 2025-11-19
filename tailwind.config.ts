@@ -11,7 +11,8 @@ const config: Config = {
       fontFamily: {
         commissioner: ['var(--font-commissioner)'],
         rubikMonoOne: ['var(--font-rubikMonoOne)'],
-        robotoMono: ['var(--font-robotoMono)']
+        robotoMono: ['var(--font-robotoMono)'],
+        plusJakartaSans: ['var(--font-plusJakartaSans)']
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
