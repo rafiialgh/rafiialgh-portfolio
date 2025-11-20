@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 
 import { Commissioner, Roboto_Mono, Rubik_Mono_One, Plus_Jakarta_Sans } from 'next/font/google';
-import Navbar from './components/navbar/page';
+import Navbar from './components/Navbar';
 import LenisScroll from './components/LenisScroll';
 
 const inter = Inter({ subsets: ['latin'] });

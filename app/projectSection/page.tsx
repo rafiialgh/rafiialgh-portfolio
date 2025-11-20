@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import ProjectBox from '../components/projectBox/page';
+import ProjectBox from '../components/ProjectBox';
 
 export default function ProjectSection() {
   return (
