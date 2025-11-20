@@ -52,13 +52,16 @@ export default function Dashboard() {
 
             <div className="absolute -bottom-5 md:-bottom-4 flex justify-center items-center w-full max-w-md">
               <video
-                src="/Emoji.MOV"
+                // src="/Emoji.webm"
                 className="w-40 md:w-60"
                 autoPlay
                 muted
                 playsInline
                 loop
-              ></video>
+              >
+                <source src="/Emoji.MOV" type='video/mp4; codecs="hvc1"' />
+                <source src="/Emoji.webm" type="video/webm" />
+              </video>
             </div>
             <div className="absolute top-[20px] w-full max-w-md md:w-[80rem] md:bottom-[-10px] absolute-x-center">
               <div className="absolute absolute-y-center absolute-x-center w-full md:w-auto -bottom-34 md:bottom-auto">
@@ -125,7 +128,10 @@ export default function Dashboard() {
             </div>
           </div>
           <div className="flex-1 mb-8 border-t border-gray-200 flex flex-col md:items-center justify-center gap-1 text-xs text-gray-500 font-plusJakartaSans">
-            <p className="mt-2 md:mt-0">&copy; {currentYear} Muhammad Rafii Alghaffary. All Rights Reserved.</p>
+            <p className="mt-2 md:mt-0">
+              &copy; {currentYear} Muhammad Rafii Alghaffary. All Rights
+              Reserved.
+            </p>
 
             <p className="">
               Built with{" "}
