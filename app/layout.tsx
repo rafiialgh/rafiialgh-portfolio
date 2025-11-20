@@ -4,6 +4,7 @@ import './globals.css';
 
 import { Commissioner, Roboto_Mono, Rubik_Mono_One, Plus_Jakarta_Sans } from 'next/font/google';
 import Navbar from './components/navbar/page';
+import LenisScroll from './components/LenisScroll';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -44,8 +45,10 @@ export default function RootLayout({
       className={`${commissioner.variable} ${rubikMonoOne.variable} ${robotoMono.variable} ${plusJakartaSans.variable}`}
     >
       <body>
+        <LenisScroll>
         <Navbar />
         <div className=''>{children}</div>
+        </LenisScroll>
       </body>
     </html>
   );
