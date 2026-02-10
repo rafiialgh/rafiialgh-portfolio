@@ -69,7 +69,7 @@ export default function Dashboard() {
               </div>
 
             </div>
-            <div className="absolute top-1 right-3 md:right-[30%] float z-20">
+            <div className="absolute top-1 right-3 md:right-[20%] float z-20">
               <FloatingBubbleText />
             </div>
           </div>
