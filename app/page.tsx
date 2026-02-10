@@ -1,9 +1,25 @@
 import Image from "next/image";
 import ProjectSection from "../app/projectSection/page";
 import Stack from "./stack/page";
+import { useEffect, useState } from "react";
+import FloatingBubbleText from "./components/FloatingBubbleText";
+import { div } from "framer-motion/client";
+import { TimeDisplay } from "./components/TimeDisplay";
 
 export default function Dashboard() {
   const currentYear = new Date().getFullYear();
+
+  const greetings = [
+    "Hello",
+    "你好",
+    "Hola",
+    "Bonjour",
+    "こんにちは",
+    "안녕하세요",
+    "Ciao",
+    "Hallo",
+  ];
+
   return (
     <>
       <div className="relative overflow-hidden pt-16 md:pt-5 border-b-gray-200 border-b border-solid flex justify-center bg-[radial-gradient(90%_107.13%_at_25%_10%,transparent_15%,transparent_45%,#4FACFE66_100%),linear-gradient(white,white)] ring-1 ring-black/5 ring-inset">
@@ -18,34 +34,68 @@ export default function Dashboard() {
             </p>
           </div>
 
-          <div className="relative w-full h-full flex justify-center mt-5 md:mt-0">
+          <div className="relative w-full h-full flex justify-center items-center">
+            {/* <div className="absolute z-0">
+              <svg width="1000" height="1000">
+                <circle
+                  cx="500"
+                  cy="500"
+                  r="200"
+                  fill="none"
+                  stroke="#6b7280"
+                  stroke-width="1"
+                  stroke-dasharray="12 10"
+                  opacity="0.5"
+                />
+              </svg>
+            </div> */}
+
+            <div className="border border-gray-300 rounded-xl my-10 shadow-xl box-gradient z-10">
+              <div className="ml-5">
+                <TimeDisplay />
+              </div>
+              <div className="flex justify-center items-center p-10">
+                <video
+                  // src="/Emoji.webm"
+                  className="w-52 md:w-60"
+                  autoPlay
+                  muted
+                  playsInline
+                  loop
+                >
+                  <source src="/Emoji.MOV" type='video/mp4; codecs="hvc1"' />
+                  <source src="/Emoji.webm" type="video/webm" />
+                </video>
+              </div>
+
+            </div>
+            <div className="absolute top-1 right-16 md:right-[20%] float z-20">
+              <FloatingBubbleText />
+            </div>
+          </div>
+
+
+          {/* <div className="relative w-full h-full flex justify-center mt-5 md:mt-0">
             <div className="relative w-full h-full max-w-md md:max-w-xl font-plusJakartaSans">
-              {/* Next.js */}
+
               <div className="absolute bottom-8 left-5 z-10 px-3 md:px-4 py-1 bg-black rounded-full shadow-md text-xs md:text-sm md:bottom-24 md:left-9">
                 Next.Js
               </div>
 
-              {/* Rest API */}
               <div className="absolute bottom-10 right-5 z-10 px-3 md:px-4 py-1 bg-teal-800 rounded-full shadow-md text-xs md:text-sm md:bottom-16">
                 Docker
               </div>
 
-              {/* Laravel */}
               <div className="absolute top-8 right-20 z-10 px-3 md:px-4 py-1 bg-[#FF2C1F] rounded-full shadow-md text-xs md:text-sm md:top-20 md:right-12">
                 Rest API
               </div>
-
-              {/* React.js */}
               <div className="absolute top-24 left-9 z-10 px-3 md:px-4 py-1 bg-[#00C8FF] rounded-full shadow-md text-xs md:text-sm md:top-40 md:left-20">
                 React.Js
               </div>
-
-              {/* SQL */}
               <div className="absolute top-10 left-28 z-10 px-3 md:px-4 py-1 bg-[#DA2877] rounded-full shadow-md text-xs md:text-sm md:top-16">
                 SQL
               </div>
 
-              {/* React Native */}
               <div className="absolute bottom-24 right-7 z-10 px-3 md:px-4 py-1 bg-[#0367D7] rounded-full shadow-md text-xs md:text-sm md:bottom-56 md:right-36">
                 React Native
               </div>
@@ -72,7 +122,7 @@ export default function Dashboard() {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <Stack />
