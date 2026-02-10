@@ -152,7 +152,7 @@ export default function Stack() {
   return (
     <>
       <section className='relative py-10 border-b border-solid border-gray-200'>
-        <div className='inset-0 -z-[2] absolute'></div>
+        <div className='inset-0 -z-[2] absolute bg-gradient-to-b from-white from-1% via-transparent md:hidden'></div>
         <div className='bg-grid absolute inset-0 -z-[3]'></div>
         <div className='flex justify-center'>
           <div className='max-w-6xl mx-5 w-full'>
