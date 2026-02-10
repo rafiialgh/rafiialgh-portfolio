@@ -1,11 +1,12 @@
 import Image from "next/image";
 import ProjectSection from "../app/projectSection/page";
+import Stack from "./stack/page";
 
 export default function Dashboard() {
   const currentYear = new Date().getFullYear();
   return (
     <>
-      <div className="relative overflow-hidden hero-wrapper pt-16 md:pt-5 border-b-gray-200 border-b border-solid flex justify-center">
+      <div className="relative overflow-hidden pt-16 md:pt-5 border-b-gray-200 border-b border-solid flex justify-center bg-[radial-gradient(90%_107.13%_at_25%_10%,transparent_15%,transparent_45%,#4FACFE66_100%),linear-gradient(white,white)] ring-1 ring-black/5 ring-inset">
         {/*<div className='bg-ournaments absolute inset-0'></div>*/}
         <div className="h-[26rem] md:h-[23rem] mt-3 md:mt-10 bg-opacity-20 flex flex-col md:flex-row mx-5 md:mx-10 w-full gap-5 md:gap-0 max-w-6xl">
           <div className="flex flex-col justify-center md:w-1/2 lg:w-full">
@@ -67,13 +68,14 @@ export default function Dashboard() {
               <div className="absolute absolute-y-center absolute-x-center w-full md:w-auto -bottom-34 md:bottom-auto">
                 <img
                   src="/circle.svg"
-                  className="animate-spin-slow rounded-full md:max-w-2xl"
+                  className="animate-spin-slow rounded-full md:max-w-2xl invert"
                 />
               </div>
             </div>
           </div>
         </div>
       </div>
+      <Stack />
       <ProjectSection />
 
       <div className="bg-slate-50 py-10 px-6 flex justify-center items-center ">

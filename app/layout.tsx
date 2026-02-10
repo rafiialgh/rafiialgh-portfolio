@@ -44,6 +44,9 @@ export default function RootLayout({
       lang='en'
       className={`${commissioner.variable} ${rubikMonoOne.variable} ${robotoMono.variable} ${plusJakartaSans.variable}`}
     >
+      <head>
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+      </head>
       <body>
         <LenisScroll>
         <Navbar />
