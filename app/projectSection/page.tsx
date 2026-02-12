@@ -14,10 +14,19 @@ export default function ProjectSection() {
                 className='font-plusJakartaSans font-bold text-xl text-gray-900'
                 id='contact-me'
               >
-              Highlighted projects
+                Highlighted projects
               </h1>
             </div>
             <div className='grid grid-cols-1 gap-3 justify-items-center space-y-4'>
+              <ProjectBox
+                image='/raya-vote.png'
+                title='Raya Vote'
+                desc='A decentralized e-voting platform powered by Ethereum blockchain. Ensures transparent, tamper-proof elections with real-time results and secure token-based voter access.'
+                platform='Web / Blockchain'
+                stack='Next.js, Solidity'
+                prod='rayavote-client.vercel.app'
+                prodLink='https://rayavote-client.vercel.app/'
+              />
               <ProjectBox
                 image='/project-1.png'
                 title='StoreGG'
