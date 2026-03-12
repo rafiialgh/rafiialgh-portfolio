@@ -62,6 +62,11 @@ export default function Stack() {
       icon: "/icon/tanstack.png",
     },
     {
+      name: "Redis",
+      url: "https://redis.io/",
+      icon: "redis/redis-original.svg",
+    },
+    {
       name: "Supabase",
       url: "https://supabase.com/",
       icon: "supabase/supabase-original.svg",
