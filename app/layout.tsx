@@ -1,13 +1,10 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import './globals.css';
 
 import { Commissioner, Roboto_Mono, Rubik_Mono_One, Plus_Jakarta_Sans } from 'next/font/google';
 import Navbar from './components/Navbar';
 import LenisScroll from './components/LenisScroll';
 import { GoogleTagManager } from '@next/third-parties/google';
-
-const inter = Inter({ subsets: ['latin'] });
 
 const commissioner = Commissioner({
   subsets: ['latin'],
