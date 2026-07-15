@@ -5,6 +5,7 @@ import './globals.css';
 import { Commissioner, Roboto_Mono, Rubik_Mono_One, Plus_Jakarta_Sans } from 'next/font/google';
 import Navbar from './components/Navbar';
 import LenisScroll from './components/LenisScroll';
+import { GoogleTagManager } from '@next/third-parties/google';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -44,6 +45,7 @@ export default function RootLayout({
       lang='en'
       className={`${commissioner.variable} ${rubikMonoOne.variable} ${robotoMono.variable} ${plusJakartaSans.variable}`}
     >
+      <GoogleTagManager gtmId="GTM-5QC64ZJ8" />
       <head>
         <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
       </head>
