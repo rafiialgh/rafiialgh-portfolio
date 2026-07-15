@@ -79,7 +79,7 @@ export default function ProjectBox({
                 href={prodLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                data-analytics={`click-${prod}`}
+                data-analytics={`click-project-${prod}`}
                 className="font-plusJakartaSans text-[10px] text-gray-500 underline decoration-gray-300 underline-offset-2 transition-colors hover:text-gray-800 hover:decoration-gray-500"
               >
                 {prod}
