@@ -148,6 +148,7 @@ export default function Dashboard() {
               <ul>
                 <li>
                   <a
+                    data-analytics="email"
                     href="mailto:rafii.alghafari@gmail.com"
                     className="font-medium text-sm text-gray-700 hover:font-semibold transition-all ease-in"
                   >
@@ -157,6 +158,7 @@ export default function Dashboard() {
 
                 <li>
                   <a
+                    data-analytics="linkedin"
                     href="https://www.linkedin.com/in/rafiialgh/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -168,6 +170,7 @@ export default function Dashboard() {
 
                 <li>
                   <a
+                    data-analytics="github"
                     href="https://github.com/rafiialgh"
                     target="_blank"
                     rel="noopener noreferrer"
